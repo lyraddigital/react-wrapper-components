@@ -1,0 +1,40 @@
+@import 'src/colours';
+
+#sidebar {
+    grid-area: sidebar;
+    padding: 8px;
+    flex-basis: 220px;
+    background: $faint-dark-black;
+
+    header {
+        margin: 10px;
+        margin-bottom: 5px;
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
+    #sidebarNavigation {
+        list-style: none;
+
+        a {
+            display: block;
+            padding: 10px;
+            border-radius: 2px;
+            text-decoration: none;
+            color: $white;
+            font-size: 1.3rem;
+
+            &:hover {
+                background: $faint-dark-grey;
+            }
+
+            &.active {
+                background: $primary;
+            }
+        }        
+    }
+}

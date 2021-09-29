@@ -1,0 +1,15 @@
+@import 'src/colours';
+
+.fancyTextbox {
+    background: $faint-dark-grey;
+    padding: 5px 10px;
+    color: $white;
+    border-radius: 3px;
+    border: 2px solid transparent;
+
+    &:focus {
+        background: $dark-black;
+        border: 2px solid $primary;
+        outline: none;
+    }
+}

@@ -1,0 +1,12 @@
+@import 'src/colours';
+
+#footer {
+    display: flex;
+    justify-content: center;
+    color: $white;
+    padding: 2.2rem;
+}
+
+#footer > small {
+    font-size: 1.4rem;
+}

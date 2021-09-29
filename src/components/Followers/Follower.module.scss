@@ -1,0 +1,13 @@
+@import 'src/colours';
+
+.follower {
+    display: grid;    
+    place-content: center center;
+    place-items: center center;
+    grid-row-gap: 10px;
+    background: $faint-dark-black;
+
+    img {
+        border-radius: 100%;
+    }
+}
