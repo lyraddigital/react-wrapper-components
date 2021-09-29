@@ -1,32 +1,50 @@
-import { Flex } from 'components/Layout';
-import { FancyTextBox, FormField, GroupForm } from 'components/Forms';
+import { Flex } from "components/Layout";
+import { FancyTextBox } from "components/Forms";
 
 export const AccountPage = () => {
     return (
         <Flex direction="column" alignItems="center">
-            <GroupForm title="Personal Details">
-                <FormField fieldName="First Name">
-                    <FancyTextBox value="Daryl" />
-                </FormField>
-                <FormField fieldName="Last Name">
-                    <FancyTextBox value="Duck" />
-                </FormField>
-                <FormField fieldName="Username">
-                    <FancyTextBox value="daryl_duck" />
-                </FormField>
-            </GroupForm>
+            <form className="groupForm">
+                <h2>Personal Details</h2>
+                <div className="groupFormBody">
+                    <label className="formFieldLabel">First Name</label>
+                    <div className="formField">
+                        <FancyTextBox value="Daryl" />
+                    </div>
+                    <label className="formFieldLabel">Last Name</label>
+                    <div className="formField">
+                        <FancyTextBox value="Duck" />
+                    </div>
+                    <label className="formFieldLabel">Username</label>
+                    <div className="formField">
+                        <FancyTextBox value="daryl_duck" />
+                    </div>
+                </div>
+                <div className="buttonRow">
+                    <button type="button">Save</button>
+                </div>
+            </form>
 
-            <GroupForm title="Address">
-                <FormField fieldName="Line 1">
-                    <FancyTextBox value="123 Home Street" />
-                </FormField>
-                <FormField fieldName="Line 2">
-                    <FancyTextBox value="Unit 1" />
-                </FormField>
-                <FormField fieldName="City">
-                    <FancyTextBox value="Melbourne" />
-                </FormField>                            
-            </GroupForm>         
+            <form className="groupForm">
+                <h2>Address</h2>
+                <div className="groupFormBody">
+                    <label className="formFieldLabel">Line 1</label>
+                    <div className="formField">
+                        <FancyTextBox value="123 Home Street" />
+                    </div>
+                    <label className="formFieldLabel">Line 2</label>
+                    <div className="formField">
+                        <FancyTextBox value="Unit 1" />
+                    </div>
+                    <label className="formFieldLabel">City</label>
+                    <div className="formField">
+                        <FancyTextBox value="Melbourne" />
+                    </div>
+                </div>
+                <div className="buttonRow">
+                    <button type="button">Save</button>
+                </div>
+            </form>
         </Flex>
-    );     
+    );    
 }
