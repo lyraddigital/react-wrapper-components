@@ -1,5 +1,5 @@
-import { Flex } from "components/Layout";
-import { FancyTextBox } from "components/Forms";
+import { Flex } from 'components/Layout';
+import { FancyTextBox } from 'components/Forms';
 
 export const AccountPage = () => {
     return (
