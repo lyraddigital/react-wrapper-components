@@ -18,13 +18,14 @@
 
     > #pageContent {
         display: grid;
-        grid: 'sidebar content' 1fr
-              'sidebar footer' max-content
-              / 220px 1fr;
+        grid: 'content' 1fr
+              'footer' max-content
+              / 1fr;
         flex: 1 0 0;
     
         > #mainContent {
             grid-area: content;
+            padding: 0 40px;
         }
     }
 }

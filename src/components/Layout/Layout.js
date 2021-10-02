@@ -1,8 +1,5 @@
-import {
-    Footer,
-    MainNavigation,
-    Sidebar
-} from "components/Layout";
+import { MainNavigation } from "./MainNavigation/MainNavigation";
+import { Footer } from './Footer/Footer';
 import { BannerIcon } from "components/Icons";
 
 import style from './Layout.module.scss';
@@ -15,7 +12,6 @@ export const Layout = ({ children }) => {
                 <MainNavigation />
             </header>
             <div id={ style.pageContent }>
-                <Sidebar />
                 <div id={ style.mainContent }>
                     { children }
                 </div>
