@@ -19,5 +19,6 @@ This project can be ran locally. Upon forking this repository, you just need to 
 - `npm start`
 
 ## Watch on YouTube
+A YouTube video on how this control works can be watched here.
 
-A YouTube video on how this control works will be uploaded shortly. I will place the link here once this is complete.
+[![Understanding Wrapper Components in React.js](https://user-images.githubusercontent.com/19817876/136191116-6ebfbc69-4bc9-41a3-bccc-f551d0b2d52f.png)](https://www.youtube.com/watch?v=wKhpNWIe8qo)
